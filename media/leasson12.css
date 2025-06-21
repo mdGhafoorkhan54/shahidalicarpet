@@ -1,0 +1,15 @@
+#vid1{
+    align-content: center;
+    background-color: rgb(200, 20, 20);
+    margin-left: 23mm;
+    text-align: center;
+}
+div{
+    background-color: aqua;
+    text-align: center;
+}
+#vid2{
+    display: block;
+    text-align: center;
+    background-color: aqua;
+}
