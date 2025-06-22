@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Carpet Collection</title>
+    <style>
+        .container {
+            background-color: rgb(225, 219, 209);
+            border: 2px solid black;
+            border-radius: 10px;
+            min-width: n1200px;
+        }
+
+        .container-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 25px;
+            margin: 10px;
+        }
+
+        .box {
+            border: 1px solid black;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 3px 4px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 3px 4px;
+
+        }
+
+        .box img {
+            width: 100%;
+            min-height: 70vh;
+            object-fit: cover;
+            display: block;
+        }
+
+        .header {
+            background-color: rgb(42, 25, 91);
+            color: white;
+            list-style: none;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 7px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+
+        .header .header-nav ul {
+            list-style: none;
+            /* text-align: center; */
+            justify-content: center;
+            display: flex;
+            gap: 23px;
+
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+
+        }
+        header nav ul li a:hover{
+            background-color: rgb(56, 143, 65);
+            border-radius: 5px ;
+        }
+
+
+        /* Footer Styling */
+        .site-footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows sections to wrap on smaller screens */
+            justify-content: space-around;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #555;
+            /* Separator line */
+        }
+
+        .footer-section {
+            flex: 1;
+            /* Allows sections to grow and shrink */
+            min-width: 250px;
+            /* Minimum width before wrapping */
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .footer-section h3 {
+            color: #3498db;
+            /* A light blue for footer headings */
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            font-size: 0.95em;
+            color: #ccc;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 0.85em;
+            color: #aaa;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .site-header h1 {
+                font-size: 1.8em;
+            }
+
+            .main-nav ul {
+                flex-direction: column;
+                /* Stack nav items vertically on smaller screens */
+                gap: 15px;
+            }
+
+            .gallery-grid {
+                /* Adjust min width for grid items on medium screens */
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            }
+
+            .photo-item img {
+                height: 200px;
+                /* Adjust image height for smaller screens */
+            }
+
+            .footer-content {
+                flex-direction: column;
+                /* Stack footer sections vertically */
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-section {
+                min-width: unset;
+                /* Remove min-width to allow full stacking */
+                width: 90%;
+                /* Take up more width */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .site-header {
+                padding: 15px 0;
+            }
+        }
+
+            .site-header h1 {
+                font-size: 1.5em;
+            }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Shahid Ali Carpet and Furnishing</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h3>Artisan Carpet Collection</h3>
+    <main class="container">
+        <div class="container-grid">
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-cagdas-birsen-214376922-12549618.jpg"
+                    alt="Carpet of Small size"></div>
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-damla-karaagacli-42037640-18624121.jpg"
+                    alt=""></div>
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-diego-f-parra-33199-18506891.jpg" alt="">
+            </div>
+            <div class="box"><img
+                    src="\media\Artisan Carpet Collection\pexels-fatma-selin-sarierikli-500641714-31992291.jpg" alt="">
+            </div>
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-iremmeric-13405641.jpg" alt=""></div>
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-lorena-silaj-328303372-15106430.jpg"
+                    alt=""></div>
+            <div class="box"><img src="\media/Artisan Carpet Collection/pexels-melihvura7l-62197586-27028740.jpg"
+                    alt=""></div>
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-meruyert-gonullu-7314471.jpg" alt="">
+            </div>
+
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-meruyert-gonullu-7314472.jpg" alt="">
+            </div>
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-onur-burak-akin-392994424-28303411.jpg"
+                    alt=""></div>
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-nadiye-odabasi-3668408-29320031.jpg"
+                    alt=""></div>
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-pramodtiwari-13575101.jpg" alt=""></div>
+
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-rosetheguide-19009152.jpg" alt=""></div>
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-seyhmuskino-30002533.jpg" alt=""></div>
+            <div class="box"><img src="\media\Artisan Carpet Collection\pexels-seyhmuskino-30002534.jpg" alt=""></div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section about-us" id="about">
+                <h3>About Us</h3>
+                <p>Shahid Ali Carpet & Furnishing offers a wide range of high-quality carpets, sofas, and other
+                    furnishing items. With years of experience, we pride ourselves on craftsmanship and customer
+                    satisfaction. Located in Abu Dhabi - United Arab Emirates.</p>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact Info</h3>
+                <p>Email: shahidalicarpetfurnishing@gmail.com</p>
+                <p>Phone: +971 54 243 5212</p>
+                <p>Address: 25 Shinaf St - Zayed Port - E14 01 - Abu Dhabi - United Arab Emirates</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a
+                            href="https://www.google.com/maps/place/Shahid+Ali+Carpet+and+Furnishings/@24.5121427,54.3772143,792m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e5e67003159d1df:0x13499960d96b0197!8m2!3d24.5121427!4d54.3797892!16s%2Fg%2F11vwzf1blq?hl=en&authuser=0&entry=ttu&g_ep=EgoyMDI1MDYxNi4wIKXMDSoASAFQAw%3D%3D">Location</a>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Shahid Ali Carpet & Furnishing. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
