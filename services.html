@@ -41,8 +41,9 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            /* Allow items to wrap on smaller screens */
             gap: 30px;
+            
+            /* Allow items to wrap on smaller screens */
             /* Space between nav items */
         }
 
@@ -50,20 +51,19 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
-            padding: 8px 15px;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.2s ease;
         }
 
         .main-nav a:hover {
-            background-color: #34495e;
+            background-color: #eb0c22;
             /* Slightly lighter blue/grey on hover */
         }
 
         .site-footer {
             background-color: #333;
             color: white;
-            padding: 40px 20px;
+            /* padding: 40px 20px; */
             text-align: center;
             margin-top: 40px;
         }
@@ -74,7 +74,6 @@
             /* Allows sections to wrap on smaller screens */
             justify-content: space-around;
             gap: 30px;
-            max-width: 1200px;
             margin: 0 auto;
             padding-bottom: 30px;
             border-bottom: 1px solid #555;
@@ -145,6 +144,18 @@
             padding: 20px;
             font-size: 1.5em;
         }
+        @media (max-width:450px){
+            .site-header h1{
+                font-size: 18px;
+            }
+            .main-nav a{
+                font-size: 10px;
+            }
+            .main-nav ul{
+                flex-direction: column;
+            }
+
+        }
     </style>
 </head>
 
@@ -153,7 +164,7 @@
         <h1>Shahid Ali Carpet and Furnishing</h1>
         <nav class="main-nav">
             <ul>
-                <li><a href="photo_site.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="Shahidali/about.html">About Us</a></li>
@@ -337,7 +348,7 @@
             <div class="footer-section quick-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="photo_site.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a
