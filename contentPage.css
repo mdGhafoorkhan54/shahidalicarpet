@@ -2,8 +2,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 15px;
-            padding: 10px;
+            /* margin: 15px;
+            padding: 10px; */
         }
 
         .content {
@@ -53,4 +53,5 @@
         .image-box button:hover{
             background-color: #ffff0037;
             transform: translateY(-15px);
+
         }
