@@ -1,7 +1,7 @@
 .navBar {
     display: flex;
     align-items: center;
-    background-image: url("New folder\Frame 1.png");
+    background-image: url("New folder/Frame 1.png");
     height: 21vh;
     background-position: center;
     background-repeat: repeat-x;
@@ -109,5 +109,6 @@
     transform: scale(1.05);
 
 }
+
 
 
